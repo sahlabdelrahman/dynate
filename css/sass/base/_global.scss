@@ -1,0 +1,21 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $cairo;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $cairo;
+}
+
+p, a {
+    font-family: $cairo;
+}
+
+.modal {
+    top: 50% !important;
+    transform: scaleX(1) scaleY(1) translateY(-50%) !important;
+}

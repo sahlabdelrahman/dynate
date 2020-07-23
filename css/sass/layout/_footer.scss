@@ -1,0 +1,42 @@
+/* Start Footer */
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    .footer-icons {
+        margin-bottom: 1rem !important;
+        a {
+            margin: 0 5px;
+            i {
+                height: 40px;
+                width: 40px;
+                display: inline-block;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                font-size: 16px;
+                @include prefixer(transition, all 0.3s, webkit moz o ms);
+                border: 1px solid #7a797b;
+                color: #7a797b;
+            }
+            &:hover {
+                i {
+                    background-color: #222;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+
+    .copyrights {
+        span {
+            font-size: 14px;
+            color: #868e96;
+            a {
+
+            }
+        }
+    }
+}
+/* End Footer */

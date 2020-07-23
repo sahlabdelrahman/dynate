@@ -1,0 +1,106 @@
+/* Start Header */
+
+header {
+    .navbar-fixed {
+        height: 100px;
+        nav {
+            .container {
+                width: 90%;
+            }
+            background-color: #FFF;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            .nav-wrapper {
+                .brand-logo {
+                    img {
+                        width: 127px;
+                    }
+                }
+                .sidenav-trigger {
+                    i {
+                        color: $mainColor;
+                    }
+                }
+                ul {
+                    li {
+                        a {
+                            position: relative;
+                            color: #2D3766;
+                            font-size: 16px;
+                            font-weight: bold;
+                            @include prefixer(transition, all 0.3s, webkit moz o ms);
+                            &::before {
+                                content: '';
+                                display: inline-block;
+                                position: absolute;
+                                top: 0;
+                                right: 15px;
+                                width: 0;
+                                height: 4px;
+                                background: transparent;
+                                @include prefixer(transition, all 0.3s, webkit moz o ms);
+                            }
+                            &:hover {
+                                color: #B81C5D;
+                                background: transparent !important;
+                                &::before {
+                                    background: #B81C5D;
+                                    width: 37px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sidenav {
+        li {
+            a {
+                color: #2D3766;
+                font-weight: bold;
+                @include prefixer(transition, all 0.3s, webkit moz o ms);
+                &:hover {
+                    color: #B81C5D;
+                }
+            }
+        }
+    }
+
+    
+    @media (max-width: 991px) {
+        .nav-wrapper {
+            .brand-logo {
+                    right: 0;
+                    transform: translateX(0);
+            }
+
+        }
+
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .nav-wrapper {
+            .brand-logo {
+                img {
+                    width: 90px !important;
+                    margin-top: 6px;
+                }
+            }
+
+            ul {
+                li {
+                    a {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
+
+/* End Header */

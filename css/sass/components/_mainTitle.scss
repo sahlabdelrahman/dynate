@@ -1,0 +1,22 @@
+.main-title {
+    margin-bottom: 40px;
+    h4 {
+        position: relative;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: $mainColor;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 37px;
+            height: 4px;
+            background: #B81C5D;
+        }
+    }
+}

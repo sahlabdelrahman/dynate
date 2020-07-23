@@ -1,0 +1,141 @@
+/* Start Banner Area */
+.banner-area {
+    position: relative;
+    /* background-image: url('../../../images/backgrounds/banner.png'); */
+    background-image: linear-gradient(to right, rgba(184, 28, 93, 0.85), rgba(28, 111, 128, 0.85));
+    background-size: cover;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, rgba(184, 28, 93, 0.85), rgba(28, 111, 128, 0.85));
+        overflow: hidden;
+    }
+
+    .container {
+        padding-top: $sPadding;
+        padding-bottom: $sPadding;
+        .info {
+            z-index: 3;
+            h2 {
+                color: #FFF;
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            p {
+                margin-top: 25px;
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 2;
+            }
+        }
+    
+        .mock-up {
+            z-index: 3;
+            .mobile {
+                margin-bottom: 25px;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .stores {
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    cursor: pointer;
+
+                    &:first-child {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        .container {
+            .mock-up {
+                .stores {
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        margin-bottom: 15px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+
+    @media (min-width: 650px) and (max-width: 991px) {
+        .container {
+            .mock-up {
+                margin-top: 30px;
+                .mobile {
+                    img {
+                        width: 520px;
+                    }
+                }
+    
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .container {
+            text-align: center;
+            .mock-up {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .container {
+
+            .info {
+            
+                h2 {
+                    font-size: 32px;
+                }
+    
+                p {
+                    margin-top: 25px;
+                    font-size: 14.5px;
+                    line-height: 1.6;
+                }
+            }
+        
+            .mock-up {
+                .mobile {
+                    margin-bottom: 25px;
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .stores {
+                    a {
+                        width: 132px;
+                       img {
+                           width: 100%;
+                       }
+
+                       &:first-child {
+                        margin-left: 24px !important;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Banner Area */

@@ -1,0 +1,39 @@
+// screens
+
+$maxMobile: "(max-width: 576px)";
+$maxSmall: "(max-width: 767px)";
+$minMedium: "(min-width: 768px)";
+$maxMedium: "(max-width: 991px)";
+$minLarge: "(min-width: 992px)";
+$maxLarge: "(max-width: 1199px)";
+$minXlarge: "(min-width: 1200px)";
+
+
+// fonts variables
+$cairo: 'Cairo', sans-serif;
+
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+// colors variables
+$mainColor: #1C9DB8;
+$secColor: #2A3554;
+$textColor: #2D3766;
+$pColor: #777;
+
+// background
+$mainBackground: #EDF6FF;
+$secondBackground: #000410;
+
+// padding
+
+$mainPadding: 100px;
+$sPadding: 50px;
+
+
+
+// margin
+
+$mainMargin: 100px;
+$sMargin: 50px;
