@@ -25,6 +25,23 @@ p, a {
   transform: scaleX(1) scaleY(1) translateY(-50%) !important;
 }
 
+/* Disable zoom in in mobile */
+@media (max-width: 767px) {
+  input[type=date],
+input[type=datetime],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+select:focus,
+textarea {
+    font-size: 16px !important;
+  }
+}
 /* Start Header */
 header .navbar-fixed {
   height: 100px;
