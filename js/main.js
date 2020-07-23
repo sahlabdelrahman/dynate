@@ -51,6 +51,11 @@ $(document).ready(function(){
         $("html,body").animate({scrollTop: 0}, 600);
     });
 
+    // popup share
+    $(".send-data").on('click', function(event){
+        event.preventDefault();
+      });
+
     // close popup share 
     $('.close_share').click(function() {
         $('#popup_share').modal('close');
