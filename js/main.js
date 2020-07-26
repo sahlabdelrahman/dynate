@@ -51,7 +51,7 @@ $(document).ready(function(){
         $("html,body").animate({scrollTop: 0}, 600);
     });
 
-    // popup share
+    // prevent reload when click on send button in popup share
     $(".send-data").on('click', function(event){
         event.preventDefault();
       });
